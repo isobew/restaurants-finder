@@ -16,7 +16,7 @@ export const Card = styled.div`
   }
 `;
 
-export default ({ restaurant }) => {
+const ImgCard = ({ restaurant }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   const image = restaurant.photos ? restaurant.photos[0].getUrl() : restaurant.icon;
@@ -41,3 +41,5 @@ export default ({ restaurant }) => {
     </>
   );
 };
+
+export default ImgCard;
